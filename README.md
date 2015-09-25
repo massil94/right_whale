@@ -1,3 +1,6 @@
+# Deep Learning Resources
+http://www.jeremydjacksonphd.com/?p=28
+
 # right_whale
 Kaggle Right Whale Recognition challenge https://www.kaggle.com/c/noaa-right-whale-recognition
 

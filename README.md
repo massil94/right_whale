@@ -1,3 +1,18 @@
+# Deep Learning Resources
+http://www.jeremydjacksonphd.com/?p=28
+
+# AMI for AWS EC2
+ami-03e67874, available in EU-Ireland
+
+# How to run dl-rnn notebooks
+```
+sudo su # to switch to root
+pip uninstall ipython
+pip install "ipython[all]"
+git clone https://github.com/deeplearningparis/dl-rnn.git
+cd dl-rnn
+```
+
 # right_whale
 Kaggle Right Whale Recognition challenge https://www.kaggle.com/c/noaa-right-whale-recognition
 

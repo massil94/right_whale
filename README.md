@@ -1,26 +1,23 @@
-# Deep Learning Resources
+## Deep Learning Resources
 http://www.jeremydjacksonphd.com/?p=28
 
-# AMI for AWS EC2
+## AMI for AWS EC2
 ami-03e67874, available in EU-Ireland
 
-# How to run dl-rnn notebooks
+## How to run ipython notebook
 ```
 sudo su # to switch to root
 pip uninstall ipython
 pip install "ipython[all]"
-git clone https://github.com/deeplearningparis/dl-rnn.git
-cd dl-rnn
 ```
 
-# right_whale
+## right_whale
 Kaggle Right Whale Recognition challenge https://www.kaggle.com/c/noaa-right-whale-recognition
 
-# TODO
+## TODO
 0-Data prep
 Split between 
 6926 test
-
 
 I-Using hierarchical models: 
 Step 0: Build new features using AutoEncoder to compress the information

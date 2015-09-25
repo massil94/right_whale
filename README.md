@@ -5,8 +5,14 @@ http://www.jeremydjacksonphd.com/?p=28
 ami-03e67874, available in EU-Ireland
 
 ## How to run ipython notebook
+there is a pyzmq-related problem on the AMI, you can solve it this way:
 ```
-sudo su # to switch to root
+# switch to root
+sudo su
+# install gnureadline
+sudo apt-get install libncurses5-dev
+pip install gnureadline
+# uninstall and reinstall ipython
 pip uninstall ipython
 pip install "ipython[all]"
 ```

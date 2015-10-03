@@ -30,6 +30,8 @@ Step 0: Build new features using AutoEncoder to compress the information
 Step 1: Cluster whales into groups of similars whales (K-means)
 Step 2: Classification. K can be a parameter of Classif.
 
+Try to 'give' prediction probas to best representant of each class
+
 Goal: multiclass identification 
 
 

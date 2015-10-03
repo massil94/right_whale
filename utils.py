@@ -1,3 +1,4 @@
+from boto.s3.connection import Location
 import lasagne
 import cPickle as pickle
 
@@ -9,22 +10,25 @@ def save(l_out,filename):
         pickle.dump(all_params_values,f)
     save2s3(filename)
 
-def save2s3(filename):
+def save2s3(filename, bucket_name=None):
     """ Saves the parameters of a model to an S3 bucket."""
 
-    AWS_ACCES_KEY_ID = ''
-    AWS_SECRET_ACCES_KEY = ''
+    AWS_ACCES_KEY_ID = 'AKIAJDIX5NJPO4VAOHZA'
+    AWS_SECRET_ACCES_KEY = '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'
 
     import boto
-    bucket_name  = 'right_whale'
+    #bucket_name  = 'right-whale'
     conn = boto.connect_s3(AWS_ACCES_KEY_ID, 
           AWS_SECRET_ACCES_KEY)
 
-
     import boto.s3
-    bucket = conn.create_bucket(bucket_name,
-        location = boto.s3.connection.Location.DEFAUT)
-
+    from boto.s3.bucket import Bucket
+    if bucket_name == None:
+        # bucket = conn.create_bucket(bucket_name,
+        #     location = Location.EU)
+        bucket = conn.create_bucket(bucket_name)
+    else:
+        bucket = Bucket(conn, bucket_name)
     testfile = filename
     print 'Uploading %s to Amazon S3 bucket %s' % \
         (testfile,bucket_name)
@@ -37,8 +41,9 @@ def save2s3(filename):
     from boto.s3.key import Key
     k = Key(bucket)
     k.key = filename
-    k.set_content_from_filename(testfile,
-     cb = percent_cb, num_cb = 10)
+    k.set_contents_from_filename(testfile)
+    #k.set_contents_from_filename(testfile,
+    # cb = percent_cb, num_cb = 10)
 
 def load(l_out,filename): 
     """ Loads parameter values into a model.

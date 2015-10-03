@@ -21,18 +21,18 @@ pip install "ipython[all]"
 Kaggle Right Whale Recognition challenge https://www.kaggle.com/c/noaa-right-whale-recognition
 
 ## TODO
-0-Data prep
+
+### Data prep
 Split between 
 6926 test
 
-I-Using hierarchical models: 
-Step 0: Build new features using AutoEncoder to compress the information
-Step 1: Cluster whales into groups of similars whales (K-means)
-Step 2: Classification. K can be a parameter of Classif.
+### Using hierarchical models: 
+* Build new features using AutoEncoder to compress the information
+* Cluster whales into groups of similars whales (K-means)
+* Classification. K can be a parameter of Classif.
 
 Try to 'give' prediction probas to best representant of each class
 
 Goal: multiclass identification 
 
-
-II-Using semi supervised learning
+### Using semi supervised learning

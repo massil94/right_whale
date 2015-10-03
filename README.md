@@ -23,15 +23,18 @@ Kaggle Right Whale Recognition challenge https://www.kaggle.com/c/noaa-right-wha
 ## TODO
 
 ### Data prep
-Split between 
-6926 test
+* Python labelling tool: slot
+```
+git clone https://github.com/cvhciKIT/sloth.git
+```
+* Resize images to 256x256
 
-### Using hierarchical models: 
+### Hierarchical models: 
 * Build new features using AutoEncoder to compress the information
 * Cluster whales into groups of similars whales (K-means)
 * Classification. K can be a parameter of Classif.
 
-Try to 'give' prediction probas to best representant of each class
+Idea: Try to 'transfer' prediction probas to best representant of each class
 
 Goal: multiclass identification 
 

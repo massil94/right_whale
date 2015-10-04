@@ -13,8 +13,8 @@ def save(l_out,filename):
 def save2s3(filename, bucket_name=None):
     """ Saves the parameters of a model to an S3 bucket."""
 
-    AWS_ACCES_KEY_ID = 'AKIAJDIX5NJPO4VAOHZA'
-    AWS_SECRET_ACCES_KEY = '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'
+    AWS_ACCES_KEY_ID = ''
+    AWS_SECRET_ACCES_KEY = ''
 
     import boto
     #bucket_name  = 'right-whale'

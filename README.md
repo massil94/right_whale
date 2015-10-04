@@ -17,13 +17,10 @@ pip uninstall ipython
 pip install "ipython[all]"
 ```
 
-## right_whale
-Kaggle Right Whale Recognition challenge https://www.kaggle.com/c/noaa-right-whale-recognition
-
 ## TODO
 
 ### Data prep
-* Python labelling tool: slot
+* Python labelling tool: sloth
 ```
 git clone https://github.com/cvhciKIT/sloth.git
 ```

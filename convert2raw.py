@@ -17,7 +17,7 @@ def load_from_jpeg():
     Load the train data_loader from `.jpeg`files.
     """
     labels = pd.read_csv(FILE_PATH + '/data/train.csv').values
-    images_train = np.empty((labels.shape[0], 256, 256, 3), dtype='uint8')
+    images = np.empty((labels.shape[0], 256, 256, 3), dtype='uint8')
     for k in range(labels.shape[0]):
     	img = skimage.io.imread(FILE_PATH + '/data/imgs/%s.jpeg' % labels[k, 0])
     	images[k, :, :, :] = img

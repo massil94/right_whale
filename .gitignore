@@ -1,3 +1,6 @@
 data/ 
 sample_submission.csv
 .gitignore
+sloth/
+*.pyc
+right_whale_hunt/

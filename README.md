@@ -36,3 +36,5 @@ Idea: Try to 'transfer' prediction probas to best representant of each class
 Goal: multiclass identification 
 
 ### Using semi supervised learning
+
+### win the first prize

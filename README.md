@@ -1,5 +1,6 @@
 ## Deep Learning Resources
-http://www.jeremydjacksonphd.com/?p=28
+* List of references: http://www.jeremydjacksonphd.com/?p=28
+* Good tutorial from Stanford: http://ufldl.stanford.edu/tutorial/
 
 ## AMI for AWS EC2
 ami-03e67874, available in EU-Ireland

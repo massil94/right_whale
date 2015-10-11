@@ -23,14 +23,7 @@ pip install "ipython[all]"
 
 ## TODO
 
-### Data prep
-* Python labelling tool: sloth
-```
-git clone https://github.com/cvhciKIT/sloth.git
-```
-* Resize images to 256x256
-
-### Hierarchical models: 
+### Hierarchical models
 * Build new features using AutoEncoder to compress the information
 * Cluster whales into groups of similars whales (K-means)
 * Classification. K can be a parameter of Classif.

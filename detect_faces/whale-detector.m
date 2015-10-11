@@ -8,4 +8,3 @@ for i=1:images.Count
     imwrite(imcropped,fileName); % Save negative images
 end
 
-WhaleDetectorMdl = trainCascadeObjectDetector('detectorFile.xml', positiveInstances, negativeFolder),'NumCascadeStages',15,'FalseAlarmRate',0.01,'FeatureType','LBP');

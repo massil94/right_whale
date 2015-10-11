@@ -1,3 +1,6 @@
+## trainCascadeObjectDetector example
+http://fr.mathworks.com/help/vision/ref/traincascadeobjectdetector.html
+
 ## Deep Learning Resources
 * List of references: http://www.jeremydjacksonphd.com/?p=28
 * Good tutorial from Stanford: http://ufldl.stanford.edu/tutorial/

@@ -1,3 +1,4 @@
+detection/*
 detect_faces/negativeFolder/*
 *.m~
 *DS_Store

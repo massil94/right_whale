@@ -1,3 +1,8 @@
+# Use CNN for detection ?
+* https://github.com/sermanet/OverFeat
+* https://github.com/sergeyk/selective_search_ijcv_with_python
+* https://github.com/rbgirshick/rcnn
+
 ## trainCascadeObjectDetector example
 http://fr.mathworks.com/help/vision/ref/traincascadeobjectdetector.html
 
